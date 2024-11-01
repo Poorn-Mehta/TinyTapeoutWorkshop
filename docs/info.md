@@ -13,8 +13,10 @@ This is a very simple project that displays 'P' on the 7-segment display, when t
 
 ## How to test
 
-By default, when all inputs are 0 (0x00), all outputs should be 0 as well, leaving the 7-segment display unlit. As different patterns are inputted, different segments of the display will turn on/off. When the right combination (0x46 --> IN1, IN2, IN6 are logic 1 and every other INs are 0) is provided in the input, the 7-segment display should light up segments to display P (OUT2, OUT3, OUT7 are OFF, every other is lit up or ON). 
+By default, when all inputs are 0 (0x00), the 7-segment output should have inversed segment states required for displying P (which basically means that if you turn OFF all segments required for P and turn ON the rest of the 'digit' making segments then that's what it would be showing). It wasn't intentional but I think it's pretty cool that it turned out this way.
+
+As different patterns are inputted, different segments of the display will turn on/off. When the right combination (0x46 --> IN1, IN2, IN6 are logic 1 and every other INs are 0) is provided in the input, the 7-segment display should light up segments to display P (OUT2, OUT3, OUT7 are OFF, every other is lit up or ON). 
 
 ## External hardware
 
-A breadboard, 5V power supply, some connector wires, 8 position DIP switch, and a 7 segment display is required.
+A breadboard, 1.8V power supply, some connector wires, 8 position DIP switch, and a 7 segment display is required.
