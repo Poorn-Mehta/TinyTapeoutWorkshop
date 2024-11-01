@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This is a very simple project that displays 'P' on the 7-segment display, when the 8-bit input is 0x46. This is achieved through simple logic design & a few number of basic logic gates.
 
 ## How to test
 
-Explain how to use your project
+By default, when all inputs are 0 (0x00), all outputs should be 0 as well, leaving the 7-segment display unlit. As different patterns are inputted, different segments of the display will turn on/off. When the right combination (0x46 --> IN1, IN2, IN6 are logic 1 and every other INs are 0) is provided in the input, the 7-segment display should light up segments to display P (OUT2, OUT3, OUT7 are OFF, every other is lit up or ON). 
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A breadboard, 5V power supply, some connector wires, 8 position DIP switch, and a 7 segment display is required.
